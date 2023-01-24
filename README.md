@@ -1,4 +1,4 @@
-# InSecTT_WSN_Power_Consumption_Dataset
+# InSecTT WSN Power Consumption Dataset
 
 This dataset consists of power consumption measurements of four different Wireless Sensor Network (WSN) protocols. We consider Bluetooth Low Energy (BLE), Thread, the EPhESOS [1] protocol, and UWB in this dataset. 
 We focus on a wireless sensor node use case, i.e. a sensor node gathers every 100 ms 2 byte of data and transmits it to the network. We compare the energy consumption of the different network protocols and also investigate how much the power consumption decreases if more data is transmitted less frequently. Since the energy consumption is measured in 10 µs resolution, this dataset can also be used to evaluate the influence of the different parts of the communication.
@@ -16,9 +16,9 @@ For the energy consumption measurements, we use the Power Profiler Kit II develo
 ## Evaluation with Varing Transmission Periods 
 In our example use case, a sensor node has to transmit 2-byte sensor data periodically to the network. We want to evaluate how the energy consumption depends on the transmission period including the overhead of the network protocol. Additionally, we want to investigate how much energy consumption decreases if larger packets are transmitted, although less frequently. We define a data acquisition interval of 100 ms, where we acquire 2 bytes of sensor data that needs to be transmitted. This interval is kept constant while increasing the communication period. E.g., for a communication period of 400 ms we will transmit 8 bytes of data. The following table depicts the considered communication periods and the corresponding data size.
 
-| Update Period [ms] 	| 100 	| 200 	| 400 	| 800 	| 1600 	|   	|   	|
-|-------------------:	|----:	|----:	|----:	|----:	|-----:	|---	|---	|
-|   Data Size [byte] 	|   2 	|   4 	|   8 	|  16 	|   32 	|   	|   	|
+| Update Period [ms] 	| 100 	| 200 	| 400 	| 800 	| 1600 	| 
+|-------------------:	|----:	|----:	|----:	|----:	|-----:	|
+|   Data Size [byte] 	|   2 	|   4 	|   8 	|  16 	|   32 	|  
 
 ## Configuration of the Different Wireless Network Protocols
 
